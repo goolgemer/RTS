@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="modal_menu">
+        <button class="close-button"></button>
+        <img class="logo logo_modal" src="./img/logo.png" alt="" />
+        <button
+          onclick="scrollToAnchor('main')"
+          class="main_nav-button button_modal"
+        >
+          Главная
+        </button>
+        <button
+          onclick="scrollToAnchor('about')"
+          class="main_nav-button button_modal"
+        >
+          Обо мне
+        </button>
+        <button
+          onclick="scrollToAnchor('skills')"
+          class="main_nav-button button_modal"
+        >
+          Навыки
+        </button>
+        <button
+          onclick="scrollToAnchor('works')"
+          class="main_nav-button button_modal"
+        >
+          Работы
+        </button>
+        <button
+          onclick="scrollToAnchor('feedback')"
+          class="main_nav-button button_modal"
+        >
+          Отзывы
+        </button>
+      </div>
+      <div id="main" class="main_nav-block">
+        <img class="logo" src="./img/logo.png" alt="" />
+        <button class="burger-button"></button>
+        <nav class="main_nav">
+          <button onclick="scrollToAnchor('main')" class="main_nav-button">
+            Главная
+          </button>
+          <button onclick="scrollToAnchor('about')" class="main_nav-button">
+            Обо мне
+          </button>
+          <button onclick="scrollToAnchor('skills')" class="main_nav-button">
+            Навыки
+          </button>
+          <button onclick="scrollToAnchor('works')" class="main_nav-button">
+            Работы
+          </button>
+          <button onclick="scrollToAnchor('feedback')" class="main_nav-button">
+            Отзывы
+          </button>
+        </nav>
+
+        <div class="main_main-block">
+          <img class="boss_icon" src="./img/Rts_boss.png" alt="" />
+          <div class="main_main-block_name_block">
+            <img class="lable" src="./img/main_main.png" alt="" />
+            <div class="name-description">
+              <h1 class="name">Плотников Никита</h1>
+              <h3 class="description">личный сайт веб разработчика</h3>
+            </div>
+          </div>
+          <button onclick="scrollToAnchor('about')" class="main_button">
+            Подробнее
+          </button>
+        </div>
+      </div>
+      <div id="about" class="about_block">
+        <h2 class="header">ОБО МНЕ</h2>
+        <div class="about_block_content">
+          <div class="left-content_column">
+            <p class="about_paragraph">
+              Меня зовут Никита. Я занимаюсь разработкой современных сайтов и
+              приложений.
+            </p>
+            <p class="about_paragraph">
+              Мне нравится создавать интересные и современные проекты.
+            </p>
+            <button onclick="scrollToAnchor('skills')" class="main_button">
+              Мои навыки
+            </button>
+          </div>
+          <div class="right-content_column">
+            <img
+              style="width: 64px; height: 17px; margin-bottom: 20px"
+              src="./img/3dots.png"
+              alt=""
+            />
+            <img
+              class="photo"
+              src="https://assets.tiltify.com/uploads/media_type/image/203025/blob-09636982-a21a-494b-bbe4-3692c2720ae3.jpeg"
+              alt=""
+            />
+            <p class="about_info"><strong>Где живу:</strong> Мехико сити</p>
+            <p class="about_info"><strong>Возраст:</strong> 27</p>
+            <p class="about_info"><strong>Год рождения:</strong> 1997</p>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="skills_block">
+        <h2 class="header">НАВЫКИ</h2>
+        <div class="skills_block_card">
+          <img class="lable second" src="./img/main_main.png" alt="" />
+          <div class="skills_block_card-content">
+            <h4 style="max-width: 500px">
+              ЭТОТ САЙТ Я СДЕЛАЛ ДЛЯ ПОЛУЧЕНИЯ КВАЛИФИКАЦИИ В ROCKET TECH SCHOOL
+            </h4>
+            <div class="images-container">
+              <img src="./img/html.png" alt="" class="skills_img" /><img
+                src="./img/css.png"
+                alt=""
+                class="skills_img"
+              /><img src="./img/js.png" alt="" class="skills_img" />
+            </div>
+            <button onclick="scrollToAnchor('works')" class="main_button">
+              Мои работы
+            </button>
+          </div>
+        </div>
+        <div id="works" class="works_block">
+          <h2 class="header">РАБОТЫ</h2>
+          <div class="works_block_cards">
+            <img src="./img/work1.png" alt="" class="works_block_card" />
+            <img src="./img/work2.png" alt="" class="works_block_card" />
+            <img src="./img/work3.png" alt="" class="works_block_card" />
+          </div>
+        </div>
+      </div>
+      <div id="feedback" class="feedback_block">
+        <h2 class="header">ОТЗЫВЫ</h2>
+        <div class="feedback_wrapper">
+          <div class="feedback_wrapper"></div>
+          <div class="feedback_card">
+            <img
+              style="height: 16px; width: 61px; margin-bottom: 10px"
+              src="./img/3dots.png"
+              alt=""
+            />
+            <img class="feedback_photo" src="./img/photo.png" alt="" />
+            <p class="feedback_name">ВЛАДИМИР</p>
+            <p class="feedback_discription">Основатель Rocket Tech School</p>
+          </div>
+          <p class="feedback">
+            Очень хорошо пишет код. Отличная оптимизация сайта. Современно,
+            стильно, молодежно!
+          </p>
+          <div class="feedback_card">
+            <img
+              style="height: 16px; width: 61px; margin-bottom: 10px"
+              src="./img/3dots.png"
+              alt=""
+            />
+            <img class="feedback_photo" src="./img/photo22.jpg" alt="" />
+            <p class="feedback_name">Абобус</p>
+            <p class="feedback_discription">Код ревьюер в GOOGLE</p>
+          </div>
+          <p class="feedback">
+            Очень хорошо пишет код. Отличная оптимизация сайта. Современно,
+            стильно, молодежно!
+          </p>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer_wrapper">
+          <div class="footer_names">
+            <p class="footer_name">ПЛОТНИКОВ НИКИТА</p>
+            <p class="footer_description">Личный сайт веб разработчика</p>
+          </div>
+          <p class="footer_year">©2024</p>
+          <div class="footer_socials">
+            <a href=""
+              ><img class="footer_social" src="./img/disk.png" alt=""
+            /></a>
+            <a href=""
+              ><img class="footer_social" src="./img/fb.png" alt=""
+            /></a>
+            <a href=""
+              ><img class="footer_social" src="./img/inst.svg" alt=""
+            /></a>
+            <a href=""
+              ><img class="footer_social" src="./img/tg.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
